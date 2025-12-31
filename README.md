@@ -64,5 +64,5 @@ If you want to help out in any way or simply provide feedback/support, join the 
 
 ## References
 
-- [XDJ100SX](https://github.com/marcmonka/XDJ100SX)
-- [MIXXX](https://github.com/mixxxdj/mixxx)
+- [XDJ100SX](https://github.com/marcmonka/XDJ100SX) Primary inspiration for this project
+- [MIXXX](https://github.com/mixxxdj/mixxx) A FOSS DJ Software compatible with Linux
