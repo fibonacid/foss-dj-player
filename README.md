@@ -1,5 +1,7 @@
 # foss-dj-player
 
+[![Join our Discord](https://img.shields.io/badge/Discord-Join%20Chat-7289DA?logo=discord&logoColor=white)](https://discord.gg/WABteAtQdq)
+
 DJ players are very expensive for no good reason. This project aims to fix this by providing resources for building one yourself.
 
 > This repository will eventually contain documentation, guides, schematics, 3D models and software for assembling a standalone DJ player.
