@@ -43,6 +43,23 @@ The cool part about open source DJ players is that you own it completely. This m
 This means that the hardware is not tied to any specific DJ software.
 You can flash a micro SD card with a custom linux ISO, including the DJ software pre-configured with Midi mappings and UI skins for the embedded touchscreen.
 
+## Help needed
+
+This project requires help in the following fields:
+
+- Electronics
+    - Designing PCBs
+    - Finding components
+    - Testing and Prototyping
+- Software
+    - Embedded development
+    - OS Ricing (Linux probably)
+- Product
+    - Research on features and pricing
+    - Industrial Design for 3D printing
+
+If you want to help out in any way or simply provide feedback/support, join the [discord channel](https://discord.gg/WABteAtQdq)
+
 ## References
 
 - [XDJ100SX](https://github.com/marcmonka/XDJ100SX)
