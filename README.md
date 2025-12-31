@@ -1,4 +1,49 @@
 # foss-dj-player
 
-A free and open source dj player
+DJ players are very expensive for no good reason. This project aims to fix this by providing resources for building one yourself.
 
+> This repository will eventually contain documentation, guides, schematics, 3D models and software for assembling a standalone DJ player.
+Until a first prototype is developed, we can use it to brainstorm ideas and explain the project goals
+
+## Product requirements
+
+- must be [standalone](#standalone)
+- must be [cheap](#cheap)
+- must be [easy to assemble](#easy-to-assemble)
+- must [compatible with rekordbox USB sticks](#compatible-with-rekordbox-usb-sticks)
+- must [DJ software agnostic](#dj-software-agnostic)
+
+### Standalone
+
+The player embeds the software and hardware required for playback, instead of relying of software on a separate device/computer
+In simple terms: it's a player not a controller.
+
+### Cheap
+
+Pioneer has a monopoly that allows it to charge ridiculus amounts of money. This project aims to make DJ players affordable for the average person.
+A good price point would be around the cost of a entry level DJ controller or a bit more. 
+The price should not get too close to the entry level DJ player for Pioneer (XDJ-700) which costs around 700 euros.
+
+### Easy to Assemble
+
+The player must be simple enough for someone with basic electronics skills to assemble it in a few hours or so.
+The electronics connections should be done with a custom PCB
+The PCB should include slots for external modules like microcontrollers and periferals
+Soldering should be required but fairly easy, not too many components
+
+### Compatible with rekordbox USB sticks
+
+The Pioneer monopoly forces you to use rekordbox to store your media, cues etc.
+Sadly we cannot ditch completely the pioneer ecosystem without making the alternative feel like a toy.
+I have not tested it yet, but i heard that [Mixxx](https://github.com/mixxxdj/mixxx) allows it.
+
+### DJ Software agnostic
+
+The cool part about open source DJ players is that you own it completely. This means you can decide what kind of software should run on the player.
+This means that the hardware is not tied to any specific DJ software.
+You can flash a micro SD card with a custom linux ISO, including the DJ software pre-configured with Midi mappings and UI skins for the embedded touchscreen.
+
+## References
+
+- [XDJ100SX](https://github.com/marcmonka/XDJ100SX)
+- [MIXXX](https://github.com/mixxxdj/mixxx)
