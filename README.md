@@ -12,8 +12,8 @@ Until a first prototype is developed, we can use it to brainstorm ideas and expl
 - must be [standalone](#standalone)
 - must be [cheap](#cheap)
 - must be [easy to assemble](#easy-to-assemble)
-- must [compatible with rekordbox USB sticks](#compatible-with-rekordbox-usb-sticks)
-- must [DJ software agnostic](#dj-software-agnostic)
+- must be [compatible with rekordbox USB sticks](#compatible-with-rekordbox-usb-sticks)
+- must be [DJ software agnostic](#dj-software-agnostic)
 
 ### Standalone
 
@@ -60,7 +60,7 @@ This project requires help in the following fields:
     - Research on features and pricing
     - Industrial Design for 3D printing
 
-If you want to help out in any way or simply provide feedback/support, join the [discord channel](https://discord.gg/WABteAtQdq)
+If you want to help out in any way or simply provide feedback/support, join the [discord server](https://discord.gg/WABteAtQdq)
 
 ## References
 
