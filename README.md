@@ -49,13 +49,15 @@ You can flash a micro SD card with a custom linux ISO, including the DJ software
 
 The FOSS dj player is build of several parts, which can be ordered and assembled using the resources provided in this repo.
 
-- 3D Printed case
-- Custom PCB
-- Buttons, Faders, Jog Wheel etc.
-- MIDI controller module
-- Raspberry PI module
-- Audio DAC module
-- Touch Screen Display
+| Component                       | Notes                                                                                |
+|---------------------------------|--------------------------------------------------------------------------------------|
+| 3D printed case                 | to hold everything together                                                          |
+| Custom PCB                      | to hold the electronic connections without running cables al over the placT          |
+| Buttons, Faders, Jog Wheel etc. | to interact with the player                                                          |
+| MIDI controller module          | to expose sensor input to the dj software as MIDI                                    |
+| Raspberry PI                    | to host the operating system and dj software + peripherals (usb, ethernet)           |
+| Audio DAC module                | to output good quality audio from the raspberry pi + RCA connector output for mixers |
+| Touch Screen Display            | to interact with dj software controls that don't fit the physical buttons/sensors.   |
 
 ## Help needed
 
