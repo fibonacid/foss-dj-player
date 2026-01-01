@@ -58,6 +58,7 @@ The FOSS dj player is build of several parts, which can be ordered and assembled
 | Raspberry PI                    | to host the operating system and dj software + peripherals (usb, ethernet)           |
 | Audio DAC module                | to output good quality audio from the raspberry pi + RCA connector output for mixers |
 | Touch Screen Display            | to interact with dj software controls that don't fit the physical buttons/sensors.   |
+| 3D printed inserts              | stuff to cover buttons, encoders etc.                                                |
 
 ## Help needed
 
@@ -69,7 +70,7 @@ This project requires help in the following fields:
     - Testing and Prototyping
 - Software
     - Embedded development
-    - OS Ricing (Linux probably)
+    - Linux Ricing (raspbian)
 - Product
     - Research on features and pricing
     - Industrial Design for 3D printing
