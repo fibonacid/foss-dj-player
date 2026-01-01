@@ -45,6 +45,18 @@ The cool part about open source DJ players is that you own it completely. This m
 This means that the hardware is not tied to any specific DJ software.
 You can flash a micro SD card with a custom linux ISO, including the DJ software pre-configured with Midi mappings and UI skins for the embedded touchscreen.
 
+## How does it work
+
+The FOSS dj player is build of several parts, which can be ordered and assembled using the resources provided in this repo.
+
+- 3D Printed case
+- Custom PCB
+- Buttons, Faders, Jog Wheel etc.
+- MIDI controller module
+- Raspberry PI module
+- Audio DAC module
+- Touch Screen Display
+
 ## Help needed
 
 This project requires help in the following fields:
