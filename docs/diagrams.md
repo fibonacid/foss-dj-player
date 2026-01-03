@@ -29,6 +29,7 @@ sequenceDiagram
 
 ## Hardware
 
-![hardware sketch](assets/hardware-sketch.png)
+![dj player sketch](assets/dj-player-sketch.png)
+![jog wheel sketch](assets/jog-wheel-sketch.png)
 
 
