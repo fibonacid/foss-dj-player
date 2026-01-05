@@ -1,4 +1,4 @@
-# foss-dj-player
+![FOSS DJ PLAYER](.github/assets/banner.png 'FOSS DJ PLAYER')
 
 [![Join our Discord](https://img.shields.io/badge/Discord-Join%20Chat-7289DA?logo=discord&logoColor=white)](https://discord.gg/WABteAtQdq)
 
