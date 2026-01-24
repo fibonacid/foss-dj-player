@@ -5,6 +5,6 @@ if [ -f "${ROOTFS_DIR}/etc/initramfs-tools/update-initramfs.conf" ]; then
 fi
 
 if [ ! -f "${ROOTFS_DIR}/etc/kernel-img.conf" ]; then
-	echo "do_symlinks=0" > "${ROOTFS_DIR}/etc/kernel-img.conf"
+	echo "do_symlinks=0" >"${ROOTFS_DIR}/etc/kernel-img.conf"
 fi
 rm -f "${ROOTFS_DIR}/"{vmlinuz,initrd.img}*
