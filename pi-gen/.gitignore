@@ -1,0 +1,6 @@
+deploy/*
+work/*
+postrun.sh
+.pc
+*-pc
+.DS_Store
