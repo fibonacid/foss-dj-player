@@ -1,0 +1,1 @@
+SUBSYSTEM=="block", KERNEL=="sd?1", ACTION=="add", ENV{ID_FS_TYPE}=="vfat", RUN+="/usr/local/bin/usb-mount.sh %k"

@@ -1,0 +1,1 @@
+SUBSYSTEM=="block", KERNEL=="sd?1", ACTION=="remove", RUN+="/usr/local/bin/usb-umount.sh %k"
