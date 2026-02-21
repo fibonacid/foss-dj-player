@@ -14,5 +14,6 @@ on_chroot <<-EOF
 		sudo systemctl enable seatd
 		sudo usermod -aG seat ${FIRST_USER_NAME} 
 
-		chown -R ${FIRST_USER_NAME}:${FIRST_USER_NAME} /home/${FIRST_USER_NAME}
+		chown -R ${FIRST_USER_NAME}:${FIRST_USER_NAME} /home/${FIRST_USER_NAME}/.config
+		chown -R ${FIRST_USER_NAME}:${FIRST_USER_NAME} /home/${FIRST_USER_NAME}/.bash_profile
 EOF
