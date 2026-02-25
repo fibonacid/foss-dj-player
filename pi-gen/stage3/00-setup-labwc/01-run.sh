@@ -15,4 +15,8 @@ on_chroot <<-EOF
 		sudo usermod -aG seat ${FIRST_USER_NAME} 
 
 		chown -R ${FIRST_USER_NAME}:${FIRST_USER_NAME} /home/${FIRST_USER_NAME}
+ 
+    # Set autologin to console
+		# https://www.raspberrypi.com/documentation/computers/configuration.html#boot-options-nonint
+		raspi-config nonint do_boot_behaviour B2
 EOF
