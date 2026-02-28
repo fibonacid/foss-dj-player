@@ -1,0 +1,28 @@
+{
+  "name": "foss-dj-player",
+  "version": "0.1.0",
+  "description": "A free and open source dj player",
+  "scripts": {
+    "release": "release-it"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "release-it": {
+    "$schema": "https://unpkg.com/release-it/schema/release-it.json",
+    "github": {
+      "release": true
+    },
+    "npm": false,
+    "plugins": {
+      "@release-it/conventional-changelog": {
+        "preset": "angular",
+        "infile": "CHANGELOG.md"
+      }
+    }
+  },
+  "devDependencies": {
+    "@release-it/conventional-changelog": "^10.0.5",
+    "release-it": "^19.2.4"
+  }
+}
