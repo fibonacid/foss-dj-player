@@ -1,10 +1,10 @@
 #!/bin/bash -e
 
-# adds labwc config
+# adds sway config
 mkdir -p "${ROOTFS_DIR}/home/${FIRST_USER_NAME}/.config"
-cp -r ./files/labwc "${ROOTFS_DIR}/home/${FIRST_USER_NAME}/.config/"
+cp -r ./files/sway "${ROOTFS_DIR}/home/${FIRST_USER_NAME}/.config/"
 
-# launches labwc at login
+# launches sway at login
 cp ./files/.bash_profile "${ROOTFS_DIR}/home/${FIRST_USER_NAME}/"
 
 on_chroot <<-EOF
