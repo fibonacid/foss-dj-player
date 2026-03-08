@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.1](https://github.com/fibonacid/foss-dj-player/compare/0.1.0...0.1.1) (2026-03-08)
+
+
+### Features
+
+* **pi-gen:** add bootsplash image ([#13](https://github.com/fibonacid/foss-dj-player/issues/13)) ([14ae84f](https://github.com/fibonacid/foss-dj-player/commit/14ae84fec0b247044cb37747952364b43a7ae5f4))
+
 # 0.1.0 (2026-02-28)
 
 
