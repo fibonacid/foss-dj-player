@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "description": "A free and open source dj player",
   "scripts": {
-    "release": "release-it"
+    "release:patch": "release-it -i patch --ci",
+		"release:minor": "release-it -i minor --ci",
+		"release:major": "release-it -i major --ci"
   },
   "keywords": [],
   "author": "",
