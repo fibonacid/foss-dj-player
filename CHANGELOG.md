@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.1](https://github.com/fibonacid/foss-dj-player/compare/0.1.0...0.1.1) (2026-03-08)
+
+
+### Features
+
+* **pi-gen:** setup splash screen ([644b1bb](https://github.com/fibonacid/foss-dj-player/commit/644b1bb86274e861a2b9b43765dae48a7e1ed07b))
+
 # 0.1.0 (2026-02-28)
 
 
