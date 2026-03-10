@@ -1,24 +1,33 @@
 #include <Arduino.h>
+#include <Bounce2.h>
+#include "config.h"
 
-// Definizione dell'intervallo: 2Hz -> 500ms periodo totale -> 250ms per stato
-const long interval = 250; 
-unsigned long previousMillis = 0;
-bool ledState = LOW;
+Bounce buttons[buttons::NUM_BUTTONS];
 
 void setup() {
-    // Il LED integrato del Teensy 4.1 è sul pin 13
-    pinMode(LED_BUILTIN, OUTPUT);
+
+    for (int i = 0; i < buttons::NUM_BUTTONS; i++) {
+        buttons[i].attach(buttons::BUTTON_PINS[i], INPUT_PULLUP);
+        buttons[i].interval(buttons::DEBOUNCE_MS);
+    }    
 }
 
 void loop() {
-    unsigned long currentMillis = millis();
+    
 
-    if (currentMillis - previousMillis >= interval) {
-        // Salva l'ultimo momento in cui hai blinkato
-        previousMillis = currentMillis;
+    for (int i = 0; i < buttons::NUM_BUTTONS; i++) {    
+        
+        buttons[i].update();
+        
+        if(buttons[i].fell()) {
+            usbMIDI.sendNoteOn(midi_config::MIDI_NOTES[i], 127, midi_config::MIDI_CHANNEL);
+        }
 
-        // Inverte lo stato del LED
-        ledState = !ledState;
-        digitalWrite(LED_BUILTIN, ledState);
+        if(buttons[i].rose()) {
+            usbMIDI.sendNoteOff(midi_config::MIDI_NOTES[i], 0, midi_config::MIDI_CHANNEL);
+        }
+
     }
+
+    while (usbMIDI.read()) {}
 }

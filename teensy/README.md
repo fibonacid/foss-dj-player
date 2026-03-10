@@ -21,3 +21,7 @@ So far we selected some sensors to tesst a possible layout of I/O we'd like to i
     - 1 cue
     - 1 loop active (to be integrated with loop start/end button)
 
+## Libraries
+
+- [bounce2](https://github.com/thomasfre) to implement automatic debouncing. 
+- USBmidi is native and included in the .ini
