@@ -19,7 +19,7 @@ So far we selected some sensors to tesst a possible layout of I/O we'd like to i
 - leds (3 leds)
     - 1 play
     - 1 cue
-    - 1 loop active (to be integrated with loop start/end button)
+    - 2 loop active (to be integrated with loop start/end button)
 
 ## Libraries
 
