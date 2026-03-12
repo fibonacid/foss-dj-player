@@ -1,9 +1,11 @@
 #include <Arduino.h>
 #include <Bounce2.h>
+#include <Encoder.h>
 #include "config.h"
 
 Bounce buttons[buttons::NUM_BUTTONS];
-
+Encoder browse_enc(browse_encoder::BROWSE_ENC_A, browse_encoder::BROWSE_ENC_B);
+Bounce browse_button = Bounce();
 int last_fader = -1;
 
 // functions to handle leds
@@ -38,6 +40,12 @@ void setup() {
         pinMode(leds::LED_PINS[i], OUTPUT); 
     }
 
+
+    // browse encoder
+    browse_button.attach(browse_encoder::BROWSE_BTN, INPUT_PULLUP);
+    browse_button.interval(5);
+
+    // callback for leds
     usbMIDI.setHandleNoteOn(note_on);
     usbMIDI.setHandleNoteOff(note_on);
 
@@ -69,4 +77,23 @@ void loop() {
         usbMIDI.sendControlChange(midi_config::FADER_CC, curr_fader, 1);
         last_fader = curr_fader;
     }
+
+
+    // browse encoder (rotation)
+    static long oldBrowsePos = 0;
+    long newBrowsePos = browse_enc.read() / 4; // Divido per 4 se l'encoder ha scatti fisici
+    if (newBrowsePos != oldBrowsePos) {
+        int delta = (newBrowsePos > oldBrowsePos) ? 65 : 63;
+        usbMIDI.sendControlChange(browse_encoder::BROWSE_CC, delta, 1);
+        oldBrowsePos = newBrowsePos;
+    }
+
+    // browse encoder (load track button)
+    browse_button.update();
+    if (browse_button.fell()) usbMIDI.sendNoteOn(browse_encoder::BROWSE_LOAD_NOTE, 127, 1);
+    if (browse_button.rose()) usbMIDI.sendNoteOff(browse_encoder::BROWSE_LOAD_NOTE, 0, 1);
+
+
+
+
 }

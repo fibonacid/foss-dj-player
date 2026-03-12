@@ -44,6 +44,17 @@ namespace fader {
 
 } 
 
+namespace browse_encoder {
+    
+    constexpr int BROWSE_ENC_A = 26;
+    constexpr int BROWSE_ENC_B = 27;
+    constexpr int BROWSE_BTN = 28;
+    
+    constexpr int BROWSE_CC = 12;     
+    constexpr int BROWSE_LOAD_NOTE = 75;
+
+}
+
 
 // ----- MIDI config -----
 
