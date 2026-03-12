@@ -3,7 +3,7 @@
 #include <Encoder.h>
 #include "config.h"
 
-Bounce buttons[buttons::NUM_BUTTONS];
+Bounce butts[buttons::NUM_BUTTONS];
 Encoder browse_enc(browse_encoder::BROWSE_ENC_A, browse_encoder::BROWSE_ENC_B);
 Bounce browse_button = Bounce();
 int last_fader = -1;
@@ -31,8 +31,8 @@ void setup() {
 
     // buttons
     for (int i = 0; i < buttons::NUM_BUTTONS; i++) {
-        buttons[i].attach(buttons::BUTTON_PINS[i], INPUT_PULLUP);
-        buttons[i].interval(buttons::DEBOUNCE_MS);
+        butts[i].attach(buttons::BUTTON_PINS[i], INPUT_PULLUP);
+        butts[i].interval(buttons::DEBOUNCE_MS);
     }    
 
     // leds
@@ -59,13 +59,13 @@ void loop() {
     // buttons
     for (int i = 0; i < buttons::NUM_BUTTONS; i++) {    
         
-        buttons[i].update();
+        butts[i].update();
         
-        if(buttons[i].fell()) {
+        if(butts[i].fell()) {
             usbMIDI.sendNoteOn(midi_config::NOTES[i], 127, midi_config::BUTTON_CHANNEL);
         }
 
-        if(buttons[i].rose()) {
+        if(butts[i].rose()) {
             usbMIDI.sendNoteOff(midi_config::NOTES[i], 0, midi_config::BUTTON_CHANNEL);
         }
 

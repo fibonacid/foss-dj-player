@@ -60,7 +60,7 @@ namespace browse_encoder {
 
 namespace midi_config {
 
-    constexpr int NOTES[NUM_BUTTONS] = {60, 61, 62, 63, 64, 65, 70, 71, 72, 73, 74, 75};    // to be mapped from note to play, cue, etc
+    constexpr int NOTES[buttons::NUM_BUTTONS] = {60, 61, 62, 63, 64, 65, 70, 71, 72, 73, 74, 75};    // to be mapped from note to play, cue, etc
     constexpr int BUTTON_CHANNEL = 1;
     constexpr int FADER_CC = 10;
 
