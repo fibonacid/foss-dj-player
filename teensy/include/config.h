@@ -7,8 +7,10 @@
 
 namespace buttons {
     
-    constexpr int NUM_BUTTONS   = 16; 
-    constexpr int BUTTON_PINS[NUM_BUTTONS] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14, 15, 16};
+    constexpr int NUM_BUTTONS   = 4;
+    constexpr int BUTTON_PINS[NUM_BUTTONS] = {0, 1, 4, 7};
+    // constexpr int NUM_BUTTONS   = 16; 
+    // constexpr int BUTTON_PINS[NUM_BUTTONS] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 15, 16, 17};
     constexpr int DEBOUNCE_MS = 5;
     
     // constexpr int PLAY          = 0; 
@@ -24,9 +26,9 @@ namespace buttons {
     // constexpr int LOOP_EXIT     = 10;
     // constexpr int FADER_SCALE   = 11;
     // constexpr int NEXT_TRACK    = 12;
-    // constexpr int PREV_TRACK    = 14;
-    // constexpr int SKIP_AHEAD    = 15;
-    // constexpr int SKIP_BACK     = 16;    
+    // constexpr int PREV_TRACK    = 15; // 14 is A0
+    // constexpr int SKIP_AHEAD    = 16;
+    // constexpr int SKIP_BACK     = 17;    
 } 
 
 namespace leds {
@@ -48,8 +50,7 @@ namespace browse_encoder {
     
     constexpr int BROWSE_ENC_A = 26;
     constexpr int BROWSE_ENC_B = 27;
-    constexpr int BROWSE_BTN = 28;
-    
+    constexpr int BROWSE_BTN = 28;    
     constexpr int BROWSE_CC = 12;     
     constexpr int BROWSE_LOAD_NOTE = 75;
 
@@ -59,8 +60,8 @@ namespace browse_encoder {
 // ----- MIDI config -----
 
 namespace midi_config {
-
-    constexpr int NOTES[buttons::NUM_BUTTONS] = {60, 61, 62, 63, 64, 65, 70, 71, 72, 73, 74, 75};    // to be mapped from note to play, cue, etc
+    //constexpr int NOTES[buttons::NUM_BUTTONS] = {60, 61, 62, 63, 64, 65, 70, 71, 72, 73, 74, 75};    // to be mapped from note to play, cue, etc
+    constexpr int NOTES[buttons::NUM_BUTTONS] = {60, 61, 62, 63};    // to be mapped from note to play, cue, etc
     constexpr int BUTTON_CHANNEL = 1;
     constexpr int FADER_CC = 10;
 
