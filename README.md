@@ -19,7 +19,7 @@
 - must be [cheap](#cheap)
 - must be [easy to assemble](#easy-to-assemble)
 - must be [compatible with rekordbox USB sticks](#compatible-with-rekordbox-usb-sticks)
-- must be [DJ software agnostic](#dj-software-agnostic)
+- must be [dj software agnostic](#dj-software-agnostic)
 
 ### Standalone
 
@@ -43,7 +43,7 @@ Soldering should be required but fairly easy, not too many components
 
 The Pioneer monopoly forces you to use rekordbox to store your media, cues etc.
 Sadly we cannot ditch completely the pioneer ecosystem without making the alternative feel like a toy.
-I have not tested it yet, but i heard that [Mixxx](https://github.com/mixxxdj/mixxx) allows it.
+Thankfully, [mixxx](https://github.com/mixxxdj/mixxx) already supports this.
 
 ### DJ Software agnostic
 
@@ -58,12 +58,12 @@ The FOSS dj player is build of several parts, which can be ordered and assembled
 | Component                       | Notes                                                                                |
 |---------------------------------|--------------------------------------------------------------------------------------|
 | 3D printed case                 | to hold everything together                                                          |
-| Custom PCB                      | to hold the electronic connections without running cables al over the placT          |
+| Custom PCB                      | to hold the electronic connections without running cables al over the place          |
 | Buttons, Faders, Jog Wheel etc. | to interact with the player                                                          |
 | MIDI controller module          | to expose sensor input to the dj software as MIDI                                    |
 | Raspberry PI                    | to host the operating system and dj software + peripherals (usb, ethernet)           |
 | Audio DAC module                | to output good quality audio from the raspberry pi + RCA connector output for mixers |
-| Touch Screen Display            | to interact with dj software controls that don't fit the physical buttons/sensors.   |
+| Touch Screen Display            | to interact with the dj software, and control some aspects with touch                |
 | 3D printed inserts              | stuff to cover buttons, encoders etc.                                                |
 
 ## Help needed
@@ -76,7 +76,7 @@ This project requires help in the following fields:
     - Testing and Prototyping
 - Software
     - Embedded development
-    - Linux Ricing (raspbian)
+    - Linux Ricing (debian)
 - Product
     - Research on features and pricing
     - Industrial Design for 3D printing
