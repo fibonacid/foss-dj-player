@@ -7,6 +7,11 @@ export default defineConfig({
   integrations: [
     starlight({
       title: "FOSS DJ PLAYER",
+      customCss: [
+        // Relative path to your @font-face CSS file.
+        "./src/fonts/font-face.css",
+        "./src/styles/custom.css",
+      ],
       social: [
         {
           icon: "github",
