@@ -6,6 +6,7 @@ cp -r ./files/sway "${ROOTFS_DIR}/home/${FIRST_USER_NAME}/.config/"
 
 # launches sway at login
 cp ./files/.bash_profile "${ROOTFS_DIR}/home/${FIRST_USER_NAME}/"
+cp ./files/logo.txt "${ROOTFS_DIR}/home/${FIRST_USER_NAME}/"
 
 on_chroot <<-EOF
 	  if ! getent group seat >/dev/null; then
