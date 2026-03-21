@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.1.2](https://github.com/fibonacid/foss-dj-player/compare/0.1.1...0.1.2) (2026-03-21)
+
+
+### Features
+
+* **design:** export brand assets and project files ([#16](https://github.com/fibonacid/foss-dj-player/issues/16)) ([13420a6](https://github.com/fibonacid/foss-dj-player/commit/13420a660fac1041a19a13d67dced6c1d0078461))
+* **design:** export cad files and measurements for pi5, cooler, lcd and dac ([71913c8](https://github.com/fibonacid/foss-dj-player/commit/71913c842028dd68d0c535b66d1c18a347e1de6a))
+* **design:** rexport logo from figma file ([#17](https://github.com/fibonacid/foss-dj-player/issues/17)) ([a27e3a9](https://github.com/fibonacid/foss-dj-player/commit/a27e3a9147132a2cd4fddf5f0ac2e8a9d78c3b15))
+* **pi-gen:** update bootsplash image ([5717400](https://github.com/fibonacid/foss-dj-player/commit/5717400dc5ac29976f1700a368299acb0635808f))
+
 ## [0.1.1](https://github.com/fibonacid/foss-dj-player/compare/0.1.0...0.1.1) (2026-03-08)
 
 
