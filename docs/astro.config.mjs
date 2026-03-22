@@ -34,13 +34,13 @@ export default defineConfig({
           label: "Introduction",
           link: "/intro",
         },
-        // {
-        //   label: "Guides",
-        //   items: [
-        //     // Each item here is one entry in the navigation menu.
-        //     { label: "Example Guide", slug: "guides/example" },
-        //   ],
-        // },
+        {
+          label: "Guides",
+          items: [
+            // Each item here is one entry in the navigation menu.
+            { label: "RPI Setup", slug: "guides/rpi-setup" },
+          ],
+        },
         // {
         //   label: "Reference",
         //   autogenerate: { directory: "reference" },
