@@ -1,4 +1,7 @@
+
 :root {
-  --sl-font: 'ComicShanns', serif;
-	--sl-line-height: 1.25;
+	--sl-font: 'ComicShanns', serif;
+}
+p,li,table {
+  font-family: system-ui, sans-serif;
 }
