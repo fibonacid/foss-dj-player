@@ -8,8 +8,8 @@ export default defineConfig({
     starlight({
       title: "FOSS DJ PLAYER",
       logo: {
-        light: "./src/assets/foss-djp-bn2@2x.png",
-        dark: "./src/assets/foss-djp-bn1@2x.png",
+        light: "./src/assets/fdjp_light_2xl.png",
+        dark: "./src/assets/fdjp_dark_2xl.png",
         replacesTitle: true,
       },
       customCss: [
@@ -18,6 +18,11 @@ export default defineConfig({
         "./src/styles/custom.css",
       ],
       social: [
+        {
+          icon: "discord",
+          label: "Discord",
+          href: "https://discord.gg/WABteAtQdq",
+        },
         {
           icon: "github",
           label: "GitHub",
@@ -29,13 +34,13 @@ export default defineConfig({
           label: "Introduction",
           link: "/intro",
         },
-        {
-          label: "Guides",
-          items: [
-            // Each item here is one entry in the navigation menu.
-            { label: "Example Guide", slug: "guides/example" },
-          ],
-        },
+        // {
+        //   label: "Guides",
+        //   items: [
+        //     // Each item here is one entry in the navigation menu.
+        //     { label: "Example Guide", slug: "guides/example" },
+        //   ],
+        // },
         // {
         //   label: "Reference",
         //   autogenerate: { directory: "reference" },
