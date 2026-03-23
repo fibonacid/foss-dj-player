@@ -4,8 +4,12 @@ import starlight from "@astrojs/starlight";
 
 // https://astro.build/config
 export default defineConfig({
+  // Define the deploy URL of the documentation website.
+  site: "https://docs.foss-dj-player.org",
   integrations: [
     starlight({
+      // Use the route data middleware to add the Open Graph images.
+      routeMiddleware: "./src/routeData.ts",
       title: "FOSS DJ PLAYER",
       logo: {
         light: "./src/assets/fdjp_light_2xl.png",
@@ -29,6 +33,7 @@ export default defineConfig({
           href: "https://github.com/fibonacid/foss-dj-player",
         },
       ],
+
       sidebar: [
         {
           label: "Introduction",
