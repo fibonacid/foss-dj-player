@@ -25,6 +25,7 @@ echo "Building alpine inside container"
 time docker run \
 	--name ${CONTAINER_NAME} \
 	--privileged \
+	--platform linux/arm64 \
 	${IMAGE_NAME} \
 	bash -e -o pipefail -c "
 		cd /build; ./build.sh
