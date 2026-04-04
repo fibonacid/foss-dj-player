@@ -9,6 +9,11 @@ export APK_OPTS="--arch $ARCH"
   --keys-dir=./keys \
   --packages 'linux-rpi curl vim alpine-conf seatd zsh' \
   --script-chroot \
-  "./deploy/example-$(date +%Y%m%d).tar.gz" -- ./example/install.sh
+  "./deploy/rootfs.tar.gz" -- ./example/install.sh
+
+cd deploy || exit
+mkdir rootfs
+tar xf rootfs.tar.gz -C rootfs
+rm rootfs.tar.gz
 
 
