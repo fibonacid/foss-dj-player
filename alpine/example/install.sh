@@ -1,9 +1,14 @@
 #!/bin/sh
 set -eu
 
-# What arch does apk think it's running on?
-apk --print-arch
+# setup general stuff
+setup-alpine -c ./setup-alpine.answers
 
-# What repos are configured?
-cat "/etc/apk/repositories"
+# setup user
+adduser -u 1000 -G wheel -D pi
+addgroup pi seat
+addgroup pi wheel
+
+# setup desktop
+setup-desktop sway
 

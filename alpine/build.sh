@@ -7,7 +7,7 @@ export APK_OPTS="--arch $ARCH"
 ./alpine-make-rootfs \
   --branch latest-stable \
   --keys-dir=./keys \
-  --packages 'linux-rpi curl vim' \
+  --packages 'linux-rpi curl vim alpine-conf seatd' \
   --script-chroot \
   "./deploy/example-$(date +%Y%m%d).tar.gz" -- ./example/install.sh
 
