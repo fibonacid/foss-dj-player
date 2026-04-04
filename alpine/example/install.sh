@@ -1,6 +1,9 @@
 #!/bin/sh
 set -eu
 
+# add rpi bootloader files to /boot
+/usr/sbin/update-raspberrypi-bootloader
+
 # setup general stuff
 setup-alpine -c ./setup-alpine.answers
 
