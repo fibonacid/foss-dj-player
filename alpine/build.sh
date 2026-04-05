@@ -9,7 +9,6 @@ export APK_OPTS="--arch $ARCH"
   --keys-dir=./keys \
   --packages 'linux-rpi raspberrypi-bootloader curl vim alpine-conf seatd zsh' \
   --script-chroot \
-  "./deploy/rootfs.tar.gz" -- ./example/install.sh
 
 cd deploy || exit
 mkdir rootfs
