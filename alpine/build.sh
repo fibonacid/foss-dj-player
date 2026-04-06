@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-set -euo pipefail
+set -exuo pipefail
 
 # https://github.com/alpinelinux/alpine-make-rootfs/issues/18#issuecomment-3255465655
 export ARCH=aarch64
