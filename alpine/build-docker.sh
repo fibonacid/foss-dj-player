@@ -32,6 +32,7 @@ time docker run \
 	"
 
 # Ensure that deploy/ is always owned by calling user
+mkdir -p deploy
 echo "copying results from deploy/"
 docker cp "${CONTAINER_NAME}":/build/deploy/. ./deploy/
 
