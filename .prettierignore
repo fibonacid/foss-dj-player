@@ -1,0 +1,15 @@
+pnpm-lock.yaml
+CHANGELOG.md
+
+# rpi
+rpi/debian/export-image
+rpi/debian/export-noobs
+rpi/debian/stage-0
+rpi/debian/stage-1
+rpi/debian/stage-2
+
+# design
+design/brand/fonts
+
+# docs
+docs/.astro
