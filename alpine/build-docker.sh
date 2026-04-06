@@ -34,7 +34,8 @@ time docker run \
 # Ensure that deploy/ is always owned by calling user
 mkdir -p deploy
 echo "copying results from deploy/"
-docker cp "${CONTAINER_NAME}":/build/deploy/. ./deploy/
+docker cp "${CONTAINER_NAME}":/build/deploy/alpine-rpi.img \
+	"./deploy/alpine-rpi-$(date -u +%Y-%m-%d).img"
 
 # cleanup
 docker rm -v "${CONTAINER_NAME}"
