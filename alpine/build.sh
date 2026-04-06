@@ -10,6 +10,8 @@ export APK_OPTS="--arch $ARCH"
   --branch latest-stable \
   --keys-dir=./apk/keys \
   --packages 'linux-rpi raspberrypi-bootloader curl vim alpine-conf seatd zsh' \
+  --fs-skel-dir ./rootfs \
+  --fs-skel-chown 'pi:pi' \
   --script-chroot \
   "./deploy/rootfs.tar.gz" -- ./chroot/setup.sh
 
