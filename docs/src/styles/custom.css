@@ -1,7 +1,8 @@
-
 :root {
-	--sl-font: 'ComicShanns', serif;
+  --sl-font: "ComicShanns", serif;
 }
-p,li,table {
+p,
+li,
+table {
   font-family: system-ui, sans-serif;
 }

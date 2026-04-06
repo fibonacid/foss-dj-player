@@ -18,7 +18,7 @@ In simple terms: it's a player not a controller.
 ### Cheap
 
 Pioneer has a monopoly that allows it to charge ridiculus amounts of money. This project aims to make DJ players affordable for the average person.
-A good price point would be around the cost of a entry level DJ controller or a bit more. 
+A good price point would be around the cost of a entry level DJ controller or a bit more.
 The price should not get too close to the entry level DJ player for Pioneer (XDJ-700) which costs around 700 euros.
 
 ### Easy to Assemble
@@ -45,7 +45,7 @@ You can flash a micro SD card with a custom linux ISO, including the DJ software
 The FOSS dj player is build of several parts, which can be ordered and assembled using the resources provided in this repo.
 
 | Component                       | Notes                                                                                |
-|---------------------------------|--------------------------------------------------------------------------------------|
+| ------------------------------- | ------------------------------------------------------------------------------------ |
 | 3D printed case                 | to hold everything together                                                          |
 | Custom PCB                      | to hold the electronic connections without running cables al over the place          |
 | Buttons, Faders, Jog Wheel etc. | to interact with the player                                                          |
@@ -60,15 +60,15 @@ The FOSS dj player is build of several parts, which can be ordered and assembled
 This project requires help in the following fields:
 
 - Electronics
-    - Designing PCBs
-    - Finding components
-    - Testing and Prototyping
+  - Designing PCBs
+  - Finding components
+  - Testing and Prototyping
 - Software
-    - Embedded development
-    - Linux Ricing (debian)
+  - Embedded development
+  - Linux Ricing (debian)
 - Product
-    - Research on features and pricing
-    - Industrial Design for 3D printing
+  - Research on features and pricing
+  - Industrial Design for 3D printing
 
 If you want to help out in any way or simply provide feedback/support, join the [discord server](https://discord.gg/WABteAtQdq)
 
@@ -76,4 +76,3 @@ If you want to help out in any way or simply provide feedback/support, join the 
 
 - [XDJ100SX](https://github.com/marcmonka/XDJ100SX) Primary inspiration for this project
 - [MIXXX](https://github.com/mixxxdj/mixxx) A FOSS DJ Software compatible with Linux
-

@@ -3,30 +3,29 @@ name: Publish Release
 on:
   push:
     tags:
-      - '*'
+      - "*"
 
 jobs:
   release:
-    runs-on: ubuntu-24.04-arm 
+    runs-on: ubuntu-24.04-arm
     permissions:
       contents: write
     steps:
-    - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-    - name: Build RPI image 
-      run: ./build-docker.sh
-      working-directory: rpi/debian
+      - name: Build RPI image
+        run: ./build-docker.sh
+        working-directory: rpi/debian
 
-    - name: Create Release
-      id: create_release
-      uses: softprops/action-gh-release@v2
-      with:
-        name: Release ${{ github.ref_name }}
-        tag_name: ${{ github.ref_name }}
-        draft: false
-        prerelease: false
-        body_path: CHANGELOG.md
-        files: |
-          ./rpi/debian/deploy/*.zip
-          ./rpi/debian/deploy/*.info
-
+      - name: Create Release
+        id: create_release
+        uses: softprops/action-gh-release@v2
+        with:
+          name: Release ${{ github.ref_name }}
+          tag_name: ${{ github.ref_name }}
+          draft: false
+          prerelease: false
+          body_path: CHANGELOG.md
+          files: |
+            ./rpi/debian/deploy/*.zip
+            ./rpi/debian/deploy/*.info

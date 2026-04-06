@@ -6,7 +6,7 @@
     "release:patch": "release-it -i patch --ci",
     "release:minor": "release-it -i minor --ci",
     "release:major": "release-it -i major --ci",
-		"format": "prettier --write ."
+    "format": "prettier --write ."
   },
   "keywords": [],
   "author": "",

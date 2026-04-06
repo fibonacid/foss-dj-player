@@ -1,4 +1,4 @@
-![FOSS DJ PLAYER](.github/assets/banner.png 'FOSS DJ PLAYER')
+![FOSS DJ PLAYER](.github/assets/banner.png "FOSS DJ PLAYER")
 
 <p align="center">
   <br/>
@@ -12,6 +12,5 @@
 [![GitHub Release](https://img.shields.io/github/v/release/fibonacid/foss-dj-player?label=Release&color=%23000)](https://github.com/fibonacid/foss-dj-player/releases)
 
 </div>
-
 
 Refer to the [docs](https://docs.foss-dj-player.org)
