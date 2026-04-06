@@ -15,7 +15,7 @@ jobs:
 
     - name: Build RPI image 
       run: ./build-docker.sh
-      working-directory: pi-gen
+      working-directory: rpi/debian
 
     - name: Create Release
       id: create_release
@@ -27,6 +27,6 @@ jobs:
         prerelease: false
         body_path: CHANGELOG.md
         files: |
-          ./pi-gen/deploy/*.zip
-          ./pi-gen/deploy/*.info
+          ./rpi/debian/deploy/*.zip
+          ./rpi/debian/deploy/*.info
 
