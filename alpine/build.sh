@@ -8,10 +8,10 @@ export APK_OPTS="--arch $ARCH"
 
 ./alpine-make-rootfs \
   --branch latest-stable \
-  --keys-dir=./keys \
+  --keys-dir=./apk/keys \
   --packages 'linux-rpi raspberrypi-bootloader curl vim alpine-conf seatd zsh' \
   --script-chroot \
-  "./deploy/rootfs.tar.gz" -- ./rootfs/install.sh
+  "./deploy/rootfs.tar.gz" -- ./chroot/setup.sh
 
 cd deploy || exit
 
