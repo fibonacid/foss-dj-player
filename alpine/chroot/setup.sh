@@ -3,7 +3,7 @@ set -eu
 
 # add rpi bootloader files to /boot
 /usr/sbin/update-raspberrypi-bootloader
-cp ./files/usercfg.txt /boot
+install -m 644 ./files/usercfg.txt /boot
 
 # setup general stuff
 setup-alpine -c ./files/setup-alpine.answers
