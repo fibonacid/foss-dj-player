@@ -61,5 +61,8 @@ umount mnt/root
 kpartx -dv "$LOOP"
 losetup -d "$LOOP"
 
+# remove artifacts
+rm -rf mnt rootfs
+
 echo "Image ready: alpine-rpi.img"
 
