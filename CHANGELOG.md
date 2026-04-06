@@ -1,5 +1,7 @@
 # Changelog
 
+## [0.1.4](https://github.com/fibonacid/foss-dj-player/compare/0.1.3...0.1.4) (2026-04-06)
+
 ## [0.1.3](https://github.com/fibonacid/foss-dj-player/compare/0.1.2...0.1.3) (2026-03-22)
 
 ## [0.1.1](https://github.com/fibonacid/foss-dj-player/compare/0.1.0...0.1.1) (2026-03-08)
