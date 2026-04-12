@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<MixxxControllerPreset schemaVersion="1" mixxxVersion="2.6">
+  <info>
+    <name>FossDjPlayer</name>
+    <author>fibonacid</author>
+    <description>Controller Midi Mapping for the FossDjPlayer</description>
+    <manual>foss_dj_player</manual>
+    <forums>https://mixxx.discourse.group/t/foss-dj-player</forums>
+  </info>
+  <controller id="FossDjPlayer">
+    <scriptfiles>
+      <file filename="controller.js" functionprefix="FossDjPlayer" />
+    </scriptfiles>
+    <controls>
+      <!-- BROWSER -->
+
+      <control>
+        <description>BROWSE - rotate - Scroll tracklist/tree view</description>
+        <group>[Library]</group>
+        <key>MoveVertical</key>
+        <status>0xB6</status>
+        <midino>0x40</midino>
+        <options>
+          <SelectKnob />
+        </options>
+      </control>
+      <control>
+        <description
+        >LOAD (DECK1) - press - Load a Track into Deck 1</description>
+        <group>[Channel1]</group>
+        <key>LoadSelectedTrack</key>
+        <status>0x96</status>
+        <midino>0x46</midino>
+        <options>
+          <Normal />
+        </options>
+      </control>
+
+      <!-- PLAYBACK -->
+
+      <control>
+        <description>PLAY/PAUSE (DECK1) - press - Play/Pause</description>
+        <group>[Channel1]</group>
+        <key>play</key>
+        <status>0x90</status>
+        <midino>0x0B</midino>
+        <options>
+          <Normal />
+        </options>
+      </control>
+      <control>
+        <description>CUE (DECK1) - press - Set/Call Cue, Back Cue</description>
+        <group>[Channel1]</group>
+        <key>cue_default</key>
+        <status>0x90</status>
+        <midino>0x0C</midino>
+        <options>
+          <Normal />
+        </options>
+      </control>
+
+      <!-- TEMPO -->
+
+      <control>
+        <description>TEMPO (DECK1) - fader - Tempo control LSB</description>
+        <group>[Channel1]</group>
+        <key>PioneerDDJFLX4.tempoSliderLSB</key>
+        <status>0xB0</status>
+        <midino>0x20</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <description>TEMPO (DECK1) - fader - Tempo control MSB</description>
+        <group>[Channel1]</group>
+        <key>PioneerDDJFLX4.tempoSliderMSB</key>
+        <status>0xB0</status>
+        <midino>0x00</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <description
+        >BEAT SYNC +SHIFT (DECK1) - press - change Tempo range</description>
+        <group>[Channel1]</group>
+        <key>FossDjPlayer.cycleTempoRange</key>
+        <status>0x91</status>
+        <midino>0x60</midino>
+        <options>
+          <Script-Binding />
+        </options>
+      </control>
+
+      <!-- LOOP -->
+
+      <control>
+        <description>LOOP IN/4 BEAT (DECK1) - press - Set loop in</description>
+        <group>[Channel1]</group>
+        <key>loop_in</key>
+        <status>0x90</status>
+        <midino>0x10</midino>
+        <options>
+          <Normal />
+        </options>
+      </control>
+      <control>
+        <description>LOOP OUT (DECK1) - press - Set loop out</description>
+        <group>[Channel1]</group>
+        <key>loop_out</key>
+        <status>0x90</status>
+        <midino>0x11</midino>
+        <options>
+          <Normal />
+        </options>
+      </control>
+      <control>
+        <description
+        >RELOOP/EXIT (DECK1) - press - (loop off) Reloop, (loop on) Loop exit</description>
+        <group>[Channel1]</group>
+        <key>reloop_toggle</key>
+        <status>0x90</status>
+        <midino>0x4D</midino>
+        <options>
+          <Normal />
+        </options>
+      </control>
+
+      <!-- JOGWHEEL -->
+
+      <control>
+        <description
+        >JOG DIAL PLATTER Vinyl mode On (DECK1) - rotate - Scratch</description>
+        <group>[Channel1]</group>
+        <key>FossDjPlayer.jogTurn</key>
+        <status>0xB0</status>
+        <midino>0x22</midino>
+        <options>
+          <Script-Binding />
+        </options>
+      </control>
+    </controls>
+  </controller>
+</MixxxControllerPreset>

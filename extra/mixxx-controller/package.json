@@ -1,0 +1,24 @@
+{
+  "name": "@fdjp/mixxx-controller",
+  "version": "0.1.0",
+  "description": "Mixxx controller script",
+  "main": "dist/controller.js",
+  "types": "dist/controller.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": "./dist",
+  "scripts": {
+    "prebuild": "pnpm format",
+    "build": "./build.sh",
+    "format": "prettier --write ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@prettier/plugin-xml": "^3.4.2",
+    "@tsconfig/bases": "^1.0.23",
+    "prettier": "^3.8.3"
+  }
+}
