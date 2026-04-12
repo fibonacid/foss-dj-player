@@ -3,7 +3,7 @@ set -eux
 
 # add rpi bootloader files to /boot
 /usr/sbin/update-raspberrypi-bootloader
-install -m 644 ./files/usercfg.txt /boot
+install -m 644 ./files/boot/usercfg.txt /boot
 
 # setup users
 setup-user -a -g seat -u pi
