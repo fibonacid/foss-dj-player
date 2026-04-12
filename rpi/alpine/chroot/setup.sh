@@ -6,8 +6,9 @@ set -eux
 install -m 644 ./files/boot/usercfg.txt /boot
 
 # setup users
-setup-user -a -g seat -u pi
+setup-user -a -g seat pi
 echo "pi:pi" | chpasswd
+chown -R pi:pi /home/pi
 chsh -s "$(which zsh)" pi
 
 # setup desktop
@@ -17,5 +18,4 @@ setup-desktop sway
 setup-hostname alpine-pi
 setup-interfaces -i < ./files/network/interfaces
 setup-sshd -k "$(cat ./files/ssh/key.pub)" openssh
-
 rc-update add networking boot
