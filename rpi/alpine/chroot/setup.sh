@@ -8,6 +8,7 @@ install -m 644 ./files/usercfg.txt /boot
 # setup users
 setup-user -a -g seat -u pi
 echo "pi:pi" | chpasswd
+chsh -s "$(which zsh)" pi
 
 # setup desktop
 setup-desktop sway
