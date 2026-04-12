@@ -11,6 +11,7 @@ setup-alpine -c ./files/setup-alpine.answers
 # setup user
 adduser -u 1000 -G wheel -s "$(which zsh)" -D pi
 addgroup pi seat
+passwd -d pi
 
 # setup desktop
 setup-desktop sway
