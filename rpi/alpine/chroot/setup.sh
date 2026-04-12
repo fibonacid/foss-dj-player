@@ -14,5 +14,7 @@ setup-desktop sway
 
 # setup networking
 setup-hostname alpine-pi
-setup-interfaces -i < ./files/networking/interfaces
+setup-interfaces -i < ./files/network/interfaces
+setup-sshd -k "$(cat ./files/ssh/key.pub)" openssh
+
 rc-update add networking boot
