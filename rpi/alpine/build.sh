@@ -9,7 +9,7 @@ export APK_OPTS="--arch $ARCH"
 ./alpine-make-rootfs \
   --branch latest-stable \
   --keys-dir=./apk/keys \
-  --packages 'linux-rpi raspberrypi-bootloader curl vim alpine-conf seatd zsh' \
+  --packages 'linux-rpi raspberrypi-bootloader curl vim alpine-conf doas seatd zsh' \
   --fs-skel-dir ./rootfs \
   --fs-skel-chown 'pi:pi' \
   --script-chroot \
