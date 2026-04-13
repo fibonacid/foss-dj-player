@@ -13,9 +13,11 @@ chsh -s "$(which zsh)" pi
 
 # setup desktop
 setup-desktop sway
+# rc-update add seatd
 
 # setup networking
 setup-hostname alpine-pi
 setup-interfaces -i < ./files/network/interfaces
 setup-sshd -k "$(cat ./files/ssh/key.pub)" openssh
 rc-update add networking boot
+
