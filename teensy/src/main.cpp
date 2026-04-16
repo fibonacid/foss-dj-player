@@ -81,7 +81,7 @@ void loop() {
 
     // browse encoder (rotation)
     static long oldBrowsePos = 0;
-    long newBrowsePos = browse_enc.read() / 4; // Divido per 4 se l'encoder ha scatti fisici
+    long newBrowsePos = browse_enc.read() / 4; 
     if (newBrowsePos != oldBrowsePos) {
         int delta = (newBrowsePos > oldBrowsePos) ? 65 : 63;
         usbMIDI.sendControlChange(browse_encoder::BROWSE_CC, delta, 1);

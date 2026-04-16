@@ -1,16 +1,14 @@
 #ifndef CONFIG_H
 #define CONFIG_H
-
 #include <Arduino.h>
+
 
 // ----- pins -----
 
 namespace buttons {
     
-    constexpr int NUM_BUTTONS   = 4;
-    constexpr int BUTTON_PINS[NUM_BUTTONS] = {0, 1, 4, 7};
-    // constexpr int NUM_BUTTONS   = 16; 
-    // constexpr int BUTTON_PINS[NUM_BUTTONS] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 15, 16, 17};
+    constexpr int NUM_BUTTONS   = 16; 
+    constexpr int BUTTON_PINS[NUM_BUTTONS] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 15, 16, 17};
     constexpr int DEBOUNCE_MS = 5;
     
     // constexpr int PLAY          = 0; 
@@ -60,8 +58,7 @@ namespace browse_encoder {
 // ----- MIDI config -----
 
 namespace midi_config {
-    //constexpr int NOTES[buttons::NUM_BUTTONS] = {60, 61, 62, 63, 64, 65, 70, 71, 72, 73, 74, 75};    // to be mapped from note to play, cue, etc
-    constexpr int NOTES[buttons::NUM_BUTTONS] = {60, 61, 62, 63};    // to be mapped from note to play, cue, etc
+    constexpr int NOTES[buttons::NUM_BUTTONS] = {60, 61, 62, 63, 64, 65, 70, 71, 72, 73, 74, 75};    // to be mapped from note to play, cue, etc
     constexpr int BUTTON_CHANNEL = 1;
     constexpr int FADER_CC = 10;
 
