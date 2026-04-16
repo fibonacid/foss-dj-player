@@ -6,10 +6,26 @@ set -exuo pipefail
 export ARCH=aarch64
 export APK_OPTS="--arch $ARCH"
 
+packages=(
+# system
+linux-rpi
+raspberrypi-bootloader
+alpine-conf
+doas
+shadow
+seatd
+zsh
+curl
+# utils
+vim
+tmux
+font-comic-shanns-mono-nerd
+)
+
 ./alpine-make-rootfs \
   --branch latest-stable \
-  --keys-dir=./apk/keys \
-  --packages 'linux-rpi raspberrypi-bootloader curl vim alpine-conf doas seatd zsh shadow' \
+  --keys-dir ./apk/keys \
+  --packages "${packages[@]}" \
   --fs-skel-dir ./rootfs \
   --script-chroot \
   "./deploy/rootfs.tar.gz" -- ./chroot/setup.sh
