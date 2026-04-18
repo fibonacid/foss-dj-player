@@ -2,20 +2,18 @@
   "name": "@fdjp/mixxx-controller",
   "version": "0.1.0",
   "description": "Mixxx controller script",
-  "main": "dist/foss-dj-player.midi.js",
-  "types": "dist/foss-dj-player.midi.d.ts",
+  "main": "dist/foss-dj-player-script.js",
   "files": [
     "dist"
   ],
-  "exports": "./dist",
   "scripts": {
     "prebuild": "pnpm format",
     "build": "./build.sh",
     "format": "prettier --write ."
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["mixxx", "dj", "midi"],
+  "author": "Lorenzo Rivosecchi",
+  "license": "GPL-V3",
   "devDependencies": {
     "@prettier/plugin-xml": "^3.4.2",
     "@tsconfig/bases": "^1.0.23",
