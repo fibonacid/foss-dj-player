@@ -2,7 +2,9 @@
 // https://github.com/mixxxdj/mixxx/blob/main/res/controllers/Pioneer-DDJ-FLX4-script.js
 
 class FossDjPlayer {
+  // Tempo fader
   readonly tempoRanges = [0.06, 0.1, 0.16, 0.25];
+
   // Jog wheel loop adjust
   readonly loopAdjustIn = [false, false];
   readonly loopAdjustOut = [false, false];
