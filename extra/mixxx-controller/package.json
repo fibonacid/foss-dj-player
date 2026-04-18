@@ -11,7 +11,11 @@
     "build": "./build.sh",
     "format": "prettier --write ."
   },
-  "keywords": ["mixxx", "dj", "midi"],
+  "keywords": [
+    "mixxx",
+    "dj",
+    "midi"
+  ],
   "author": "Lorenzo Rivosecchi",
   "license": "GPL-V3",
   "devDependencies": {
