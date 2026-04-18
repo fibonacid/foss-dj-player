@@ -28,6 +28,13 @@ time docker run \
 	--platform linux/arm64 \
 	${IMAGE_NAME} \
 	bash -e -o pipefail -c "
+	    # Download manually first
+		wget -q -O /tmp/apk.static 'https://gitlab.alpinelinux.org/api/v4/projects/5/packages/generic/v2.14.10/aarch64/apk.static'
+		chmod +x /tmp/apk.static
+
+		# Override APK to use our manually downloaded version
+		export APK='/tmp/apk.static'
+
 		cd /build; ./build.sh
 	"
 

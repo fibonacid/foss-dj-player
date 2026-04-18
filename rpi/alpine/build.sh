@@ -25,7 +25,7 @@ font-comic-shanns-mono-nerd
 ./alpine-make-rootfs \
   --branch latest-stable \
   --keys-dir ./apk/keys \
-  --packages "${packages[@]}" \
+  --packages "${packages[*]}" \
   --fs-skel-dir ./rootfs \
   --script-chroot \
   "./deploy/rootfs.tar.gz" -- ./chroot/setup.sh
