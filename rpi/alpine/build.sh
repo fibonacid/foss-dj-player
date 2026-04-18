@@ -30,7 +30,7 @@ font-comic-shanns-mono-nerd
   --script-chroot \
   "./deploy/rootfs.tar.gz" -- ./chroot/setup.sh
 
-cd deploy || exit
+cd deploy || exit 1
 
 # Create a disk image (2GB, adjust as needed)
 dd if=/dev/zero of=alpine-rpi.img bs=1M count=2048 status=progress
