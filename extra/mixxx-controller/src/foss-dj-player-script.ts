@@ -3,6 +3,10 @@
 
 class FossDjPlayer {
   readonly tempoRanges = [0.06, 0.1, 0.16, 0.25];
+  // Jog wheel loop adjust
+  readonly loopAdjustIn = [false, false];
+  readonly loopAdjustOut = [false, false];
+  readonly loopAdjustMultiply = 50;
 
   // Jog wheel constraints
   vinylMode = true;
@@ -63,23 +67,23 @@ class FossDjPlayer {
     let newVal = value - 64;
 
     // loop_in / out adjust
-    // const loopEnabled = engine.getValue(group, "loop_enabled");
-    // if (loopEnabled > 0) {
-    //   if (this.loopAdjustIn[channel]) {
-    //     newVal =
-    //       newVal * this.loopAdjustMultiply +
-    //       engine.getValue(group, "loop_start_position");
-    //     engine.setValue(group, "loop_start_position", newVal);
-    //     return;
-    //   }
-    //   if (this.loopAdjustOut[channel]) {
-    //     newVal =
-    //       newVal * this.loopAdjustMultiply +
-    //       engine.getValue(group, "loop_end_position");
-    //     engine.setValue(group, "loop_end_position", newVal);
-    //     return;
-    //   }
-    // }
+    const loopEnabled = engine.getValue(group, "loop_enabled");
+    if (loopEnabled > 0) {
+      if (this.loopAdjustIn[channel]) {
+        newVal =
+          newVal * this.loopAdjustMultiply +
+          engine.getValue(group, "loop_start_posi  readonly tion");
+        engine.setValue(group, "loop_start_position", newVal);
+        return;
+      }
+      if (this.loopAdjustOut[channel]) {
+        newVal =
+          newVal * this.loopAdjustMultiply +
+          engine.getValue(group, "loop_end_position");
+        engine.setValue(group, "loop_end_position", newVal);
+        return;
+      }
+    }
 
     if (engine.isScratching(deckNum)) {
       engine.scratchTick(deckNum, newVal);
