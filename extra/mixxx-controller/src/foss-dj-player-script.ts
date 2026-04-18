@@ -1,3 +1,6 @@
+// Adapted from Pioneer-DDJ-FLX4
+// https://github.com/mixxxdj/mixxx/blob/main/res/controllers/Pioneer-DDJ-FLX4-script.js
+
 class FossDjPlayer {
   readonly tempoRanges = [0.06, 0.1, 0.16, 0.25];
 

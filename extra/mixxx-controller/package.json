@@ -2,8 +2,8 @@
   "name": "@fdjp/mixxx-controller",
   "version": "0.1.0",
   "description": "Mixxx controller script",
-  "main": "dist/controller.js",
-  "types": "dist/controller.d.ts",
+  "main": "dist/foss-dj-player.midi.js",
+  "types": "dist/foss-dj-player.midi.d.ts",
   "files": [
     "dist"
   ],

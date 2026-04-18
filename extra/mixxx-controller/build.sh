@@ -10,7 +10,7 @@ rm -rf dist/*
 tsc -p tsconfig.json
 
 # copy files
-cp src/controller.xml ./dist/
+cp src/*.xml ./dist/
 cp README.md ./dist/
 
 # print contents

@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
+<!-- Adapted from Pioneer-DDJ-FLX4 -->
+<!-- https://github.com/mixxxdj/mixxx/blob/main/res/controllers/Pioneer-DDJ-FLX4.midi.xml -->
 <MixxxControllerPreset schemaVersion="1" mixxxVersion="2.6">
   <info>
     <name>FossDjPlayer</name>
@@ -9,7 +11,7 @@
   </info>
   <controller id="FossDjPlayer">
     <scriptfiles>
-      <file filename="controller.js" functionprefix="FossDjPlayer" />
+      <file filename="foss-dj-player-script.js" functionprefix="FossDjPlayer" />
     </scriptfiles>
     <controls>
       <!-- BROWSER -->
