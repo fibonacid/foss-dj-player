@@ -101,13 +101,13 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: debian-build
-          path: .
+          path: debian
 
       - name: Download alpine artifacts
         uses: actions/download-artifact@v4
         with:
           name: alpine-build
-          path: .
+          path: alpine
 
       - name: List files
         run: |
@@ -123,5 +123,5 @@ jobs:
           prerelease: false
           body_path: CHANGELOG.md
           files: |
-            ./rpi/debian/deploy/*
-            ./rpi/alpine/deploy/*
+            ./debian
+            ./alpine
