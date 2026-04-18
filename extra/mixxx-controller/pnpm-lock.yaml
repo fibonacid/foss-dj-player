@@ -1,0 +1,80 @@
+lockfileVersion: "9.0"
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+  .:
+    dependencies:
+      "@prettier/plugin-xml":
+        specifier: ^3.4.2
+        version: 3.4.2(prettier@3.8.3)
+    devDependencies:
+      "@tsconfig/bases":
+        specifier: ^1.0.23
+        version: 1.0.23
+      prettier:
+        specifier: ^3.8.3
+        version: 3.8.3
+
+packages:
+  "@prettier/plugin-xml@3.4.2":
+    resolution:
+      {
+        integrity: sha512-/UyNlHfkuLXG6Ed85KB0WBF283xn2yavR+UtRibBRUcvEJId2DSLdGXwJ/cDa1X++SWDPzq3+GSFniHjkNy7yg==,
+      }
+    peerDependencies:
+      prettier: ^3.0.0
+
+  "@tsconfig/bases@1.0.23":
+    resolution:
+      {
+        integrity: sha512-9DY5I2D/MC7/ug10yRx11pxFSTbAgvrueOkrFqeoJZAUxK68761RLvfUJcTK4HmEtmHblJ3yHGbTlozo690gKA==,
+      }
+
+  "@xml-tools/parser@1.0.11":
+    resolution:
+      {
+        integrity: sha512-aKqQ077XnR+oQtHJlrAflaZaL7qZsulWc/i/ZEooar5JiWj1eLt0+Wg28cpa+XLney107wXqneC+oG1IZvxkTA==,
+      }
+
+  chevrotain@7.1.1:
+    resolution:
+      {
+        integrity: sha512-wy3mC1x4ye+O+QkEinVJkPf5u2vsrDIYW9G7ZuwFl6v/Yu0LwUuT2POsb+NUWApebyxfkQq6+yDfRExbnI5rcw==,
+      }
+
+  prettier@3.8.3:
+    resolution:
+      {
+        integrity: sha512-7igPTM53cGHMW8xWuVTydi2KO233VFiTNyF5hLJqpilHfmn8C8gPf+PS7dUT64YcXFbiMGZxS9pCSxL/Dxm/Jw==,
+      }
+    engines: { node: ">=14" }
+    hasBin: true
+
+  regexp-to-ast@0.5.0:
+    resolution:
+      {
+        integrity: sha512-tlbJqcMHnPKI9zSrystikWKwHkBqu2a/Sgw01h3zFjvYrMxEDYHzzoMZnUrbIfpTFEsoRnnviOXNCzFiSc54Qw==,
+      }
+
+snapshots:
+  "@prettier/plugin-xml@3.4.2(prettier@3.8.3)":
+    dependencies:
+      "@xml-tools/parser": 1.0.11
+      prettier: 3.8.3
+
+  "@tsconfig/bases@1.0.23": {}
+
+  "@xml-tools/parser@1.0.11":
+    dependencies:
+      chevrotain: 7.1.1
+
+  chevrotain@7.1.1:
+    dependencies:
+      regexp-to-ast: 0.5.0
+
+  prettier@3.8.3: {}
+
+  regexp-to-ast@0.5.0: {}
