@@ -77,8 +77,8 @@ kpartx -dv "$LOOP"
 losetup -d "$LOOP"
 
 # remove artifacts
-tar caf alpine-rpi.tar.gz alpine-rpi.img
+zip alpine-rpi.zip alpine-rpi.img
 rm alpine-rpi.img
 
-echo "Image ready: alpine-rpi.tar.gz"
+echo "Image ready: alpine-rpi.zip"
 

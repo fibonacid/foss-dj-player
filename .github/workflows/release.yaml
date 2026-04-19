@@ -109,9 +109,13 @@ jobs:
           name: alpine-build
           path: alpine
 
-      - name: List files
+      - name: Prepare Assets
         run: |
+          mkdir release
           find .
+          mv ./debian/*.zip ./release/foss-dj-player-${{ github.ref_name }}-debian.zip
+          mv ./alpine/*.zip ./release/foss-dj-player-${{ github.ref_name }}-alpine.zip
+          find release
 
       - name: Create Release
         id: create_release
@@ -123,5 +127,4 @@ jobs:
           prerelease: false
           body_path: CHANGELOG.md
           files: |
-            ./debian
-            ./alpine
+            ./release/*
