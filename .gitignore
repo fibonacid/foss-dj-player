@@ -1,3 +1,6 @@
 .DS_Store
 node_modules
 alpine/deploy
+extra/teensy/compile_commands.json
+extra/mixxx-controller/tsconfig.node.tsbuildinfo
+extra/mixxx-controller/tsconfig.qjsengine.tsbuildinfo
