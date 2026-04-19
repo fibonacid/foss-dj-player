@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.1.5](https://github.com/fibonacid/foss-dj-player/compare/0.1.4...0.1.5) (2026-04-19)
+
+
+### Features
+
+* **alpine:** create alpine based rpi image ([#23](https://github.com/fibonacid/foss-dj-player/issues/23)) ([c0a0f6e](https://github.com/fibonacid/foss-dj-player/commit/c0a0f6e3263a293bda0a85c8ea99c6ba9b9d625e))
+* **alpine:** export alpine img as zip ([a04e015](https://github.com/fibonacid/foss-dj-player/commit/a04e015954c5bd886dbe0de083595bb2d02cb2b9))
+* **design:** export obj files from autodesk ([#24](https://github.com/fibonacid/foss-dj-player/issues/24)) ([541460f](https://github.com/fibonacid/foss-dj-player/commit/541460f5e53606a461512975381b36a2203a377f))
+* **extra:** create mixxx controller xml and script ([#25](https://github.com/fibonacid/foss-dj-player/issues/25)) ([3c110b7](https://github.com/fibonacid/foss-dj-player/commit/3c110b7b21e6c93473bafef6a976ec9e4b0f53ab))
+* **mixxx-controller:** add loop adjust mapping ([#27](https://github.com/fibonacid/foss-dj-player/issues/27)) ([859f768](https://github.com/fibonacid/foss-dj-player/commit/859f768139df5169981ef9a24c359677ffc3f3f9))
+
 ## [0.1.4](https://github.com/fibonacid/foss-dj-player/compare/0.1.3...0.1.4) (2026-04-06)
 
 ## [0.1.3](https://github.com/fibonacid/foss-dj-player/compare/0.1.2...0.1.3) (2026-03-22)
