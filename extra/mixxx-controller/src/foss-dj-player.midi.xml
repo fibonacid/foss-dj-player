@@ -66,7 +66,7 @@
       <control>
         <description>TEMPO (DECK1) - fader - Tempo control LSB</description>
         <group>[Channel1]</group>
-        <key>PioneerDDJFLX4.tempoSliderLSB</key>
+        <key>FossDjPlayer.tempoSliderLSB</key>
         <status>0xB0</status>
         <midino>0x20</midino>
         <options>
@@ -76,7 +76,7 @@
       <control>
         <description>TEMPO (DECK1) - fader - Tempo control MSB</description>
         <group>[Channel1]</group>
-        <key>PioneerDDJFLX4.tempoSliderMSB</key>
+        <key>FossDjPlayer.tempoSliderMSB</key>
         <status>0xB0</status>
         <midino>0x00</midino>
         <options>
