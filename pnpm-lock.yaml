@@ -21,6 +21,21 @@ importers:
         specifier: ^19.2.4
         version: 19.2.4(@types/node@22.19.13)
 
+  extra/mixxx-controller:
+    devDependencies:
+      '@prettier/plugin-xml':
+        specifier: ^3.4.2
+        version: 3.4.2(prettier@3.8.3)
+      '@tsconfig/bases':
+        specifier: ^1.0.23
+        version: 1.0.23
+      prettier:
+        specifier: ^3.8.3
+        version: 3.8.3
+      typescript:
+        specifier: ^6.0.3
+        version: 6.0.3
+
 packages:
 
   '@conventional-changelog/git-client@2.5.1':
@@ -249,6 +264,9 @@ packages:
 
   '@tootallnate/quickjs-emscripten@0.23.0':
     resolution: {integrity: sha512-C5Mc6rdnsaJDjO3UpGW/CQTHtCKaYlScZTly4JIu97Jxo/odCiH0ITnDXSJPTOrEKk/ycSZ0AOgTmkDtkOsvIA==}
+
+  '@tsconfig/bases@1.0.23':
+    resolution: {integrity: sha512-9DY5I2D/MC7/ug10yRx11pxFSTbAgvrueOkrFqeoJZAUxK68761RLvfUJcTK4HmEtmHblJ3yHGbTlozo690gKA==}
 
   '@types/node@22.19.13':
     resolution: {integrity: sha512-akNQMv0wW5uyRpD2v2IEyRSZiR+BeGuoB6L310EgGObO44HSMNT8z1xzio28V8qOrgYaopIDNA18YgdXd+qTiw==}
@@ -772,6 +790,11 @@ packages:
     engines: {node: '>=14'}
     hasBin: true
 
+  prettier@3.8.3:
+    resolution: {integrity: sha512-7igPTM53cGHMW8xWuVTydi2KO233VFiTNyF5hLJqpilHfmn8C8gPf+PS7dUT64YcXFbiMGZxS9pCSxL/Dxm/Jw==}
+    engines: {node: '>=14'}
+    hasBin: true
+
   protocols@2.0.2:
     resolution: {integrity: sha512-hHVTzba3wboROl0/aWRRG9dMytgH6ow//STBZh43l/wQgmMhYhOFi0EHWAPtoCz9IAUymsyP0TSBHkhgMEGNnQ==}
 
@@ -915,6 +938,11 @@ packages:
 
   typedarray@0.0.6:
     resolution: {integrity: sha512-/aCDEGatGvZ2BIk+HmLf4ifCJFwvKFNb9/JeZPMulfgFracn9QFcAf5GO8B/mweUjSoblS5In0cWhqpfs/5PQA==}
+
+  typescript@6.0.3:
+    resolution: {integrity: sha512-y2TvuxSZPDyQakkFRPZHKFm+KKVqIisdg9/CZwm9ftvKXLP8NRWj38/ODjNbr43SsoXqNuAisEf1GdCxqWcdBw==}
+    engines: {node: '>=14.17'}
+    hasBin: true
 
   uglify-js@3.19.3:
     resolution: {integrity: sha512-v3Xu+yuwBXisp6QYTcH4UbH+xYJXqnq2m/LtQVWKWzYc1iehYnLixoQDN9FH6/j9/oybfd6W9Ghwkl8+UMKTKQ==}
@@ -1190,6 +1218,11 @@ snapshots:
       '@xml-tools/parser': 1.0.11
       prettier: 3.8.1
 
+  '@prettier/plugin-xml@3.4.2(prettier@3.8.3)':
+    dependencies:
+      '@xml-tools/parser': 1.0.11
+      prettier: 3.8.3
+
   '@release-it/conventional-changelog@10.0.5(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.2.1)(release-it@19.2.4(@types/node@22.19.13))':
     dependencies:
       '@conventional-changelog/git-client': 2.5.1(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.2.1)
@@ -1214,6 +1247,8 @@ snapshots:
       '@types/node': 22.19.13
 
   '@tootallnate/quickjs-emscripten@0.23.0': {}
+
+  '@tsconfig/bases@1.0.23': {}
 
   '@types/node@22.19.13':
     dependencies:
@@ -1714,6 +1749,8 @@ snapshots:
 
   prettier@3.8.1: {}
 
+  prettier@3.8.3: {}
+
   protocols@2.0.2: {}
 
   proxy-agent@6.5.0:
@@ -1875,6 +1912,8 @@ snapshots:
   type-fest@2.19.0: {}
 
   typedarray@0.0.6: {}
+
+  typescript@6.0.3: {}
 
   uglify-js@3.19.3:
     optional: true

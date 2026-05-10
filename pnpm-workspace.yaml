@@ -1,0 +1,6 @@
+nodeVersion: "22"
+saveExact: true
+
+packages:
+  - "extra/mixxx-controller"
+
