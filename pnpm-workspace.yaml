@@ -1,4 +1,4 @@
-nodeVersion: "22"
+nodeVersion: "24.9.0"
 saveExact: true
 
 packages:
