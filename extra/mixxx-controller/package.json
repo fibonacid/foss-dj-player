@@ -21,6 +21,7 @@
   "devDependencies": {
     "@prettier/plugin-xml": "^3.4.2",
     "@tsconfig/bases": "^1.0.23",
-    "prettier": "^3.8.3"
+    "prettier": "^3.8.3",
+    "typescript": "^5.9.3"
   }
 }
