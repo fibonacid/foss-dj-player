@@ -20,10 +20,12 @@ curl
 vim
 tmux
 font-comic-shanns-mono-nerd
+# apps
+mixxx
 )
 
 ./alpine-make-rootfs \
-  --branch latest-stable \
+  --repositories-file ./apk/repositories \
   --keys-dir ./apk/keys \
   --packages "${packages[*]}" \
   --fs-skel-dir ./rootfs \

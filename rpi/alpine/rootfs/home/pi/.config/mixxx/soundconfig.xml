@@ -1,0 +1,6 @@
+<!DOCTYPE SoundManagerConfig>
+<SoundManagerConfig api="ALSA" deck_count="4" force_network_clock="0" latency="5" samplerate="44100" sync_buffers="2">
+ <SoundDevice alsaHwDevice="hw:2,0" name="RPi DAC+: Raspberry Pi DAC+ HiFi pcm512x-hifi-0" portAudioIndex="1">
+  <output channel="0" channel_count="2" index="0" type="Master"/>
+ </SoundDevice>
+</SoundManagerConfig>
