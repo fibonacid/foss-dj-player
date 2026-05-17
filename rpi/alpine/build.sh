@@ -20,8 +20,6 @@ curl
 vim
 tmux
 font-comic-shanns-mono-nerd
-# apps
-mixxx
 )
 
 ./alpine-make-rootfs \
@@ -32,7 +30,7 @@ mixxx
   --script-chroot \
   "./deploy/rootfs.tar.gz" -- ./chroot/setup.sh
 
-cd deploy || exit 1
+cd deploy
 
 # Create a disk image (2GB, adjust as needed)
 dd if=/dev/zero of=alpine-rpi.img bs=1M count=2048 status=progress

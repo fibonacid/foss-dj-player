@@ -21,3 +21,5 @@ setup-interfaces -i < ./files/network/interfaces
 setup-sshd -k "$(cat ./files/ssh/key.pub)" openssh
 rc-update add networking boot
 
+# install mixxx
+apk add mixxx
