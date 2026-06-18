@@ -54,6 +54,14 @@ namespace browse_encoder {
 
 }
 
+namespace jogwheel {
+    // pins for the encoder (E6B2-CWZ1X)
+    constexpr int JOG_PIN_A = 24; 
+    constexpr int JOG_PIN_B = 25;
+    
+    constexpr int JOG_CC = 11;
+    constexpr int MIDI_CH = 1;
+}
 
 // ----- MIDI config -----
 
