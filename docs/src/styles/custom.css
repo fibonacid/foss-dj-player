@@ -1,0 +1,8 @@
+:root {
+  --sl-font: "ComicShanns", serif;
+}
+p,
+li,
+table {
+  font-family: system-ui, sans-serif;
+}

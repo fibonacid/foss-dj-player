@@ -1,0 +1,9 @@
+{
+  "extends": "@tsconfig/bases/qjsengine",
+  "compilerOptions": {
+    "rootDir": "./src",
+    "outDir": "./dist"
+  },
+  "include": ["src/**/*.ts", "types/*.d.ts"],
+  "exclude": ["dist", "node_modules"]
+}

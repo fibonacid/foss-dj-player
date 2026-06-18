@@ -1,0 +1,7 @@
+
+.dockerignore
+.editorconfig
+Dockerfile
+LICENSE
+README.adoc
+deploy

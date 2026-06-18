@@ -3,15 +3,21 @@
   "version": "0.1.0",
   "description": "A free and open source dj player",
   "scripts": {
-    "release": "release-it"
+    "release:patch": "release-it -i patch --ci",
+    "release:minor": "release-it -i minor --ci",
+    "release:major": "release-it -i major --ci",
+    "format": "prettier --write ."
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "release-it": {
     "$schema": "https://unpkg.com/release-it/schema/release-it.json",
+    "git": {
+      "commitMessage": "chore: release ${version}"
+    },
     "github": {
-      "release": true
+      "release": false
     },
     "npm": false,
     "plugins": {
@@ -22,7 +28,10 @@
     }
   },
   "devDependencies": {
+    "@prettier/plugin-xml": "^3.4.2",
     "@release-it/conventional-changelog": "^10.0.5",
+    "prettier": "^3.8.1",
     "release-it": "^19.2.4"
-  }
+  },
+  "packageManager": "pnpm@10.34.1+sha512.b58fbde6dca66a929538021581f648b4570b6ca19b18e7cbd7f2c07a7b24454155388dacdf08f2af3678e88a6d1fe04f9d609df24bf51735a060ea041b374ab7"
 }
