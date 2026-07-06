@@ -9,6 +9,32 @@ on:
     branches: [main]
 
 jobs:
+  build-docs:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v7
+      - name: Check if docs changed
+        id: changes
+        run: |
+          git fetch origin main
+          if git diff --name-only HEAD origin/main | grep '^docs/'; then
+            echo "changed=true" >> $GITHUB_OUTPUT
+          else
+            echo "changed=false" >> $GITHUB_OUTPUT
+          fi
+
+      - uses: actions/setup-node@v6
+        if: steps.changes.outputs.changed == 'true'
+        with:
+          node-version-file: 'docs/.nvmrc'
+      - working-directory: docs
+        run: |
+          corepack enable
+          corepack up
+          pnpm install
+          pnpm build
+        working-directory: docs
+
   build-debian:
     runs-on: ubuntu-24.04-arm
     permissions:
