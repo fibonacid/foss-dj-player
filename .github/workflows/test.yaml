@@ -33,7 +33,6 @@ jobs:
           corepack up
           pnpm install
           pnpm build
-        working-directory: docs
 
   build-debian:
     runs-on: ubuntu-24.04-arm
@@ -41,7 +40,7 @@ jobs:
       contents: read
       packages: write
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - name: Check if rpi/debian changed
         id: changes
@@ -100,7 +99,7 @@ jobs:
       contents: read
       packages: write
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - name: Check if rpi/alpine changed *rpi-alpine-changed
         id: changes
