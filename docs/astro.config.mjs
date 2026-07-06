@@ -46,6 +46,10 @@ export default defineConfig({
             { label: "RPI Setup", slug: "guides/rpi-setup" },
           ],
         },
+        {
+          label: "Resources",
+          autogenerate: { directory: "resources" },
+        },
         // {
         //   label: "Reference",
         //   autogenerate: { directory: "reference" },

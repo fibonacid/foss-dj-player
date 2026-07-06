@@ -1,0 +1,56 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "FOSS DJ Player - Bill of Materials",
+  "type": "object",
+  "properties": {
+    "project": {
+      "type": "string"
+    },
+    "components": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/component"
+      }
+    }
+  },
+  "required": ["project", "components"],
+  "definitions": {
+    "component": {
+      "type": "object",
+			"required": ["name", "manufacturer", "quantity", "supplier", "supplier_sku"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Z]+[0-9]+$",
+          "description": "Unique identifier, e.g. C1, E1"
+        },
+        "name": {
+          "type": "string"
+        },
+        "manufacturer": {
+          "type": "string"
+        },
+        "quantity": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "supplier": {
+          "type": "string",
+          "description": "Supplier name, may include markdown link syntax"
+        },
+        "supplier_sku": {
+          "type": "string"
+        },
+        "supplier_link": {
+          "type": "string",
+          "format": "uri"
+        },
+        "notes": {
+          "type": "string"
+        }
+      },
+      "required": ["id", "name", "supplier", "supplier_link"],
+      "additionalProperties": false
+    }
+  }
+}
