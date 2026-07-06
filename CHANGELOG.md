@@ -1,5 +1,21 @@
 # Changelog
 
+## [0.1.6](https://github.com/fibonacid/foss-dj-player/compare/0.1.5...0.1.6) (2026-07-06)
+
+
+### Bug Fixes
+
+* **mixxx-controller:** add missing dev deps ([374c467](https://github.com/fibonacid/foss-dj-player/commit/374c46766ab9164773d413afb36cb1e53d61323b))
+* **mixxx-controller:** correct controller class name ([8173c9d](https://github.com/fibonacid/foss-dj-player/commit/8173c9d597c72bdfcf93cf380559f0d67ad9180b))
+* **mixxx-controller:** pin node and pnpm version ([bde6560](https://github.com/fibonacid/foss-dj-player/commit/bde656042b5d30fd3d20c4f422ca6224b974487e))
+
+
+### Features
+
+* **design:** add prototype cad files ([#31](https://github.com/fibonacid/foss-dj-player/issues/31)) ([54a9fd1](https://github.com/fibonacid/foss-dj-player/commit/54a9fd162045ca6d5f46cb2c5017688a25e04d49))
+* **design:** modify foss-dj-player Grasshopper prototype ([#32](https://github.com/fibonacid/foss-dj-player/issues/32)) ([959edf2](https://github.com/fibonacid/foss-dj-player/commit/959edf2038ca3964d03e1f47ee02b83608ebf0ba))
+* **firmware:** initial draft ([#30](https://github.com/fibonacid/foss-dj-player/issues/30)) ([fe4329b](https://github.com/fibonacid/foss-dj-player/commit/fe4329b4bfdf0a027fb77f74c9ce039c6e130e18))
+
 ## [0.1.5](https://github.com/fibonacid/foss-dj-player/compare/0.1.4...0.1.5) (2026-04-19)
 
 
